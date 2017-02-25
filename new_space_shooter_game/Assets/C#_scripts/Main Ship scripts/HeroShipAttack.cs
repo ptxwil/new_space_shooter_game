@@ -15,7 +15,7 @@ public class HeroShipAttack : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.anyKeyDown) //this is a place holder for our attack button right now any key triggers our blast attack
+        if (Input.GetKeyDown(KeyCode.Space)) //this is a place holder for our attack button right now any key triggers our blast attack
         {
             Instantiate(blast, transform.position, transform.rotation); // This starts the position of our plast from the origin of the ship
         }
