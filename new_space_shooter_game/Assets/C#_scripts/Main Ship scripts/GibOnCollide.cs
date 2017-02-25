@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class GibOnCollide : MonoBehaviour {
 
-    public GameObject[] gibs;
+    public GameObject[] gibs; //short for giblets (pronounced "jibs"), is a humorous term referring to the variably-sized body parts ("guts"), fragments, and offal produced when non-player characters or game players are damaged or killed in video games. According to John Romero in IGN's interview, Adrian Carmack has been credited for coining the term "gibs".[1] To "gib" one's opponents is to hit them with such force (often with explosives) that they rupture.
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -22,6 +22,7 @@ public class GibOnCollide : MonoBehaviour {
         {
             Instantiate(gib, transform.position, transform.rotation);
         }
+
         Destroy(gameObject);
     }
 }
